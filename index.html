@@ -85,10 +85,11 @@ ol p{color:var(--muted);font-size:.95rem;margin-top:2px}
 .ng section{margin-bottom:24px}
 .ng ul{margin:0;padding-left:20px;color:var(--muted)}
 .ng p{color:var(--muted);margin-bottom:14px}
-.pf{display:flex;gap:28px;align-items:flex-start;margin-bottom:8px}
-.pf figure{margin:0 10px 10px 0;flex:0 0 190px}
-.pf img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:2px;box-shadow:10px 10px 0 var(--sage)}
-@media(max-width:560px){.pf{flex-direction:column;gap:16px}.pf figure{flex:none;width:220px}}
+.duo{display:flex;gap:26px;margin:0 10px 34px 0}
+.duo figure{margin:0;flex:1;max-width:230px}
+.duo figure:nth-child(2){margin-top:24px}
+.duo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:2px;box-shadow:10px 10px 0 var(--sage)}
+@media(max-width:560px){.duo{gap:20px}}
 @media(max-width:800px){.ng{grid-template-columns:1fr;gap:12px}}
 
 .cg{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;margin-top:32px}
@@ -189,13 +190,12 @@ footer p{max-width:70ch}
   <h2>Nosotros</h2>
   <div class="ng">
    <div>
-    <div class="pf">
-     <figure><img src="perfil.jpg" width="640" height="640" loading="lazy" alt="Profesional de Abogados Cárdenas en su oficina"></figure>
-     <div>
-      <h3>Perfil</h3>
-      <p>Abogados Cárdenas es una firma que atiende asuntos judiciales y de asesoría para personas, familias y empresas. Ingrid Lorena Cardenas Ramirez, abogada titulada y Hector Javier Cardenas Ramirez, abogado titulado lideran el equipo y atienden personalmente cada caso.</p>
-     </div>
+    <div class="duo">
+     <figure><img src="perfil.jpg" width="640" height="800" loading="lazy" alt="Profesional de Abogados Cárdenas en su oficina"></figure>
+     <figure><img src="perfil2.jpg" width="640" height="800" loading="lazy" alt="Otro profesional de Abogados Cárdenas en su oficina"></figure>
     </div>
+    <h3>Perfil</h3>
+    <p>Abogados Cárdenas es una firma que atiende asuntos judiciales y de asesoría para personas, familias y empresas. Ingrid Lorena Cardenas Ramirez, abogada titulada y Hector Javier Cardenas Ramirez, abogado titulado lideran el equipo y atienden personalmente cada caso.</p>
     <h3>Experiencia</h3>
     <p>Trayectoria en litigio y asesoría en derecho civil, laboral, de familia, administrativo, agrario e inmobiliario. Más de 6 años de experiencia Litigios | Procesos | Asesoría Jurídica | Derecho Administrativo | Asuntos de Tierras, contamos con experiencia profesional relacionada con la Agencia Nacional de Tierras (ANT), participando en asuntos y procesos vinculados al sector rural y a la gestión de tierras.</p>
    </div>
